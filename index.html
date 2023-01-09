@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,300i,400,400i,500,500i,600,600i,700,700i"/>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Righteous&family=Lilita+One&family=Lily+Script+One&family=Ramaraja&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="watched_eye.css"/>
     <style>
     </style>
@@ -23,7 +28,7 @@
     </nav>
 
     <section class="content">
-        <section class="content-header relative bg-gold flex flex-row flex-wrap justify-center bg-mica vw:w-100 vh:h-96 pad-t12">
+        <section class="content-header relative bg-gold flex flex-column align-items-center lg:flex-row lg:flex-wrap lg:align-items-unset lg:justify-center bg-mica vw:w-100 vh:h-96 pad-t12">
              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 450" class="abs animation:moveblob_14s_ease_2s_infinite_alternate mix-blend-darken">
                 <defs>
                     <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox"
@@ -38,45 +43,59 @@
     <!--                <ellipse rx="150" ry="150" cx="793.797685102983" cy="447.875860040838" fill="hsl(185, 100%, 57%)"></ellipse>-->
                 </g>
             </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 400 450" class="abs lg:d-none animation:moveblob_14s_ease_2s_infinite_alternate mix-blend-darken">
+                <defs>
+                    <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox"
+                            primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feGaussianBlur stdDeviation="40" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic"
+                                        edgeMode="none" result="blur"></feGaussianBlur>
+                    </filter>
+                </defs>
+                <g filter="url(#bbblurry-filter)">
+                    <ellipse rx="200" ry="200" cx="120.34174138849431" cy="139.3357599431818" fill="hsla(38, 99%, 67%, 1)"></ellipse>
+    <!--                <ellipse rx="150" ry="150" cx="289.6152038574219" cy="213.35586547851562" fill="hsla(90, 69%, 72%, 1)"></ellipse>-->
+    <!--                <ellipse rx="150" ry="150" cx="793.797685102983" cy="447.875860040838" fill="hsl(185, 100%, 57%)"></ellipse>-->
+                </g>
+            </svg>
 <!--            <header class="content-header-backdrop font-120 opacity-20">Mayowa</header>-->
-            <header class="content-main-header font-48 font-medium pct:w-64 pad-12 z-10">
+            <header class="content-main-header font-32 lg:font-48 font-medium pct:w-100 lg:pct:w-64 pad-6 lg:pad-12 z-10 text-center lg:text-left">
                 Hi,
-                <div class="font-light">Welcome to my Page.</div>
-                <div class="font-60 font-light lh-100">My name is <span class="font-80 font-bold">Mayowa</span></div>
-                <div class="font-28 font-light pad-y8">
+                <div class="font-regular lg:font-light font-20 lg:font-size-inherit pad-t4 pad-b2 lg:pad-unset">Welcome to my Page.</div>
+                <div class="font-44 lg:font-60 font-light lh-normal lg:lh-100">My name is <span class="font-80 md:d-block lg:d-initial font-bold">Mayowa</span></div>
+                <div class="font-18 font-regular lg:font-28 lg:font-light pad-y4 lg:pad-y8">
                     <span class="hover:underline cursor-pointer">Entrepreneur</span> |
                     <span>Scientist</span> |
                     <span>Artist</span> |
                     <span>Programmer</span>
                 </div>
 
-                <section class="contact flex flex-row justify-between pct:w-80">
-                    <section class="contact-numbers relative font-16 font-light">
-                        <a href="tel:+2348087989548" class="relative flex flex-row align-items-center h-6 lh-100 color-initial decoration-none pad-x2 radius hover:bg-FFFFFF66 hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
-                            <span class="font-16 material-icons-two-tone w-4 h-4 lh-4 pad-t-1">phone_android</span>
-                            <span class="font-16">: +234 808 798 9548</span>
+                <section class="contact flex flex-column md:flex-row lg:flex-row md:justify-evenly lg:justify-between md:pct:w-88 md:mg-x-auto lg:mg-unset lg:pct:w-80">
+                    <section class="contact-numbers relative font-13 font-regular lg:font-16 lg:font-light">
+                        <a href="tel:+2348087989548" class="relative flex flex-row align-items-center h-6 lh-100 color-initial decoration-none lg:pad-x2 radius hover:bg-FFFFFF66 lg:hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
+                            <span class="font-15 lg:font-16 material-icons-two-tone w-4 h-4 lh-4 pad-t-1">phone_android</span>
+                            <span class="font-13 lg:font-16">: +234 808 798 9548</span>
                         </a>
-                        <a href="mailto:mayowaobi74@gmail.com" class="relative flex flex-row align-items-center h-6 lh-100 color-initial decoration-none pad-x2 radius hover:bg-FFFFFF66 hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
-                            <span class="font-16 material-icons-two-tone w-4 h-4 lh-4 pad-t-3">mail</span>
-                            <span class="font-16">: mayowaobi74@gmail.com</span>
+                        <a href="mailto:mayowaobi74@gmail.com" class="relative flex flex-row align-items-center h-6 lh-100 color-initial decoration-none lg:pad-x2 radius hover:bg-FFFFFF66 lg:hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
+                            <span class="font-15 lg:font-16 material-icons-two-tone w-4 h-4 lh-4 pad-t-3">mail</span>
+                            <span class="font-13 lg:font-16">: mayowaobi74@gmail.com</span>
                         </a>
-                        <a href="mailto:mayowaobi74@outlook.com" class="relative flex flex-row align-items-center h-6 lh-100 color-initial decoration-none pad-x2 radius hover:bg-FFFFFF66 hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
-                            <span class="font-16 material-icons-two-tone w-4 h-4 lh-4 pad-t-3">mail</span>
-                            <span class="font-16">: mayowaobi74@outlook.com</span>
+                        <a href="mailto:mayowaobi74@outlook.com" class="relative flex flex-row align-items-center h-6 lh-100 color-initial decoration-none lg:pad-x2 radius hover:bg-FFFFFF66 lg:hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
+                            <span class="font-15 lg:font-16 material-icons-two-tone w-4 h-4 lh-4 pad-t-3">mail</span>
+                            <span class="font-13 lg:font-16">: mayowaobi74@outlook.com</span>
                         </a>
                     </section>
-                    <section class="social-accounts relative font-16 font-light pct:min-w-40">
-                        <a href="https://www.twitter.com/Blessed_mayowa" target="_blank" class="twitter relative flex flex-row align-items-center h-6 color-initial decoration-none pad-x2 radius hover:bg-FFFFFF66 hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
-                            <span class="font-16 fab fa-twitter w-4 h-6 lh-6 pad-t-2"></span>
-                            <span class="font-16">: @Blessed_mayowa</span>
+                    <section class="social-accounts relative font-13 font-regular lg:font-16 lg:font-light lg:pct:min-w-40">
+                        <a href="https://www.github.com/BMayowa" target="_blank" class="github relative flex flex-row align-items-center h-6 color-initial decoration-none lg:pad-x2 radius hover:bg-FFFFFF66 lg:hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
+                            <span class="font-15 lg:font-16 fab fa-github w-4 h-6 lh-6 pad-t-2"></span>
+                            <span class="font-13 lg:font-16">: @BMayowa</span>
                         </a>
-                        <a href="https://www.github.com/BMayowa" target="_blank" class="github relative flex flex-row align-items-center h-6 color-initial decoration-none pad-x2 radius hover:bg-FFFFFF66 hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
-                            <span class="font-16 fab fa-github w-4 h-6 lh-6 pad-t-2"></span>
-                            <span class="font-16">: @BMayowa</span>
+                        <a href="https://www.linkedin.com/in/mayowa-obisesan/" target="_blank" class="linkedin relative flex flex-row align-items-center h-6 color-initial decoration-none lg:pad-x2 radius hover:bg-FFFFFF66 lg:hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
+                            <span class="font-15 lg:font-16 fab fa-linkedin w-4 h-6 lh-6 pad-t-2"></span>
+                            <span class="font-13 lg:font-16">: mayowa-obisesan</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/mayowa-obisesan/" target="_blank" class="linkedin relative flex flex-row align-items-center h-6 color-initial decoration-none pad-x2 radius hover:bg-FFFFFF66 hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
-                            <span class="font-16 fab fa-linkedin w-4 h-6 lh-6 pad-t-2"></span>
-                            <span class="font-16">: mayowa-obisesan</span>
+                        <a href="https://www.twitter.com/Blessed_mayowa" target="_blank" class="twitter relative flex flex-row align-items-center h-6 color-initial decoration-none lg:pad-x2 radius hover:bg-FFFFFF66 lg:hover:font-medium transition:background_400ms_ease|font_80ms_ease-in_100ms">
+                            <span class="font-15 lg:font-16 fab fa-twitter w-4 h-6 lh-6 pad-t-2"></span>
+                            <span class="font-13 lg:font-16">: @Blessed_mayowa</span>
                         </a>
                     </section>
                 </section>
@@ -104,23 +123,23 @@
             </defs>
         </svg>-->
         <section class="content-body">
-            <section class="flex flex-column">
-                <article class="relative pct:w-40 mg-x12 mg-t-128 pad-y6 pad-x12 radius2 shadow2">
+            <section class="flex flex-column pct:w-100">
+                <article class="align-self-center lg:align-self-start relative pct:w-88 lg:pct:w-40 mg-x-auto lg:mg-x12 mg-t-88 lg:mg-t-128 pad-y6 pad-l9 pad-r4 lg:pad-x12 radius2 shadow2 transition:padding_400ms_ease_200ms">
                     <span class="abs left-0 top-26 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
                     <span class="abs left-4 top-23 d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
                     <div class="abs top-4 right-4 font-16 color-DDD">Profile</div>
-                    <div class="h-8 lh-8 font-34 font-regular"><span class="font-bold">Mayowa</span> Obisesan</div>
+                    <div class="h-8 lh-8 font-28 lg:font-34 font-regular"><span class="font-bold">Mayowa</span> Obisesan</div>
                     <div class="font-18">Full-stack Software Engineer</div>
                     <div class="pad-t4 font-16 lh-4">
-                        5 years programming experience in web, system programming and application development.
+                        7 years programming experience in web, system programming and application development.
                         Possess high-quirk for developing problem-solving solutions.
                     </div>
                 </article>
-                <article class="lg:align-self-end relative pct:w-40 mg-x12 mg-t-128 pad-y6 pad-x12 radius2 shadow2">
+                <article class="align-self-center lg:align-self-end relative pct:w-88 lg:pct:w-40 mg-x-auto lg:mg-x12 mg-t-64 lg:mg-t-128 pad-y6 pad-l9 pad-r4 lg:pad-x12 radius2 shadow2 transition:padding_400ms_ease_200ms">
                     <span class="abs left-0 top-30 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
                     <span class="abs left-4 top-27 d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
                     <div class="abs top-4 right-4 font-16 color-DDD">Location</div>
-                    <div class="h-8 lh-8 font-34 font-regular">
+                    <div class="h-8 lh-8 font-28 lg:font-34 font-regular">
                         <span class="font-bold">Lagos,</span> Nigeria
                          <span class="relative d-inline-block valign-top w-24 h-18 font-bold gradient:to_right-green_33pct-white_33pct-white_67pct-green_67pct"></span>
                     </div>
@@ -129,19 +148,23 @@
                         Add map Integration
                     </div>
                 </article>
-                <article class="relative flex flex-row justify-around pct:w-90 mg-x12 mg-t-320 pad-y6 pad-x12 radius2 shadow2">
-                    <div class="lg:d-none">
-                        <span class="abs left-0 top-26 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
-                        <span class="abs left-4 top-23 d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
+                <article class="relative flex flex-column lg:flex-row justify-around pct:w-96 lg:pct:w-90 mg-x-auto lg:mg-x12 mg-t-72 lg:mg-t-320 pad-y12 pad-t-120 lg:pad-y6 lg:pad-x12 radius2 shadow2">
+                    <div class="d-none">
+                        <span class="abs left-0 top-10 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
+                        <span class="abs left-4 top-9 d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
                     </div>
-                    <div class="abs neg:top-40 flex flex-row justify-center align-items-center pct:w-100">
-                        <span class="relative d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
-                        <span class="relative d-block pct:w-8 h-1 bg-gold radius-smt opacity-80"></span>
-                        <span class="relative d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
+                    <div class="abs top-6 left-0 right-0 lg:neg:top-40 flex flex-row justify-center align-items-center pct:w-100">
+                        <span class="relative d-none lg:d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
+                        <span class="relative d-block pct:w-12 lg:pct:w-8 h-1 bg-gold radius-round lg:radius-smt opacity-80"></span>
+                        <span class="relative d-none lg:d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
                     </div>
                     <div class="abs top-4 right-4 font-16 color-DDD">✨</div>
-                    <section class="pct:w-30">
-                        <div class="h-8 lh-8 font-34 font-regular">
+                    <section class="relative pct:w-100 lg:pct:w-30 pad-x8 lg:pad-unset">
+                        <div class="d-none">
+                            <span class="d-none abs left-0 top-16 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
+                            <span class="abs left-1 top-14 d-block square-2 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-4px-gold"></span>
+                        </div>
+                        <div class="h-8 lh-8 font-28 lg:font-34 font-regular">
                             <span class="font-bold">Creator</span>
                         </div>
                         <div class="font-16 lh-4 pad-t1">
@@ -154,8 +177,12 @@
                         </div>
                     </section>
                     <div class="pad-y4"></div>
-                    <section class="pct:w-30">
-                        <div class="h-8 lh-8 font-34 font-regular">
+                    <section class="relative pct:w-100 lg:pct:w-30 pad-x8 lg:pad-unset">
+                        <div class="d-none">
+                            <span class="d-none abs left-0 top-16 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
+                            <span class="abs left-1 top-14 d-block square-1 radius-circle shadow:0px-0px-0px-2px-navajowhite|0px-0px-1px-4px-gold"></span>
+                        </div>
+                        <div class="h-8 lh-8 font-28 lg:font-34 font-regular">
                             <span class="font-bold">Tinkerer</span>
                         </div>
                         <div class="pad-t4 font-16 lh-4">
@@ -164,8 +191,12 @@
                         </div>
                     </section>
                     <div class="pad-y4"></div>
-                    <section class="pct:w-30">
-                        <div class="h-8 lh-8 font-34 font-regular">
+                    <section class="relative pct:w-100 lg:pct:w-30 pad-x8 lg:pad-unset">
+                        <div class="d-none">
+                            <span class="abs left-0 top-16 d-block pct:w-4 h-1 bg-gold radius-smt opacity-80"></span>
+                            <span class="abs left-4 top-12 d-block square-3 radius-circle shadow:inset-0px-0px-2px-2px-navajowhite|0px-0px-1px-2px-gold"></span>
+                        </div>
+                        <div class="h-8 lh-8 font-28 lg:font-34 font-regular">
                             <span class="font-bold">Innovator</span>
                         </div>
                         <div class="pad-t4 font-16 lh-4">
@@ -217,12 +248,12 @@
                 </section>
             </article>
 
-            <article class="relative d-block mg-auto vw:w-80 pad-y-128">
+            <article class="relative d-block mg-auto vw:w-96 lg:vw:w-80 pad-y-64 lg:pad-y-128">
                 <header class="h2-12 lh2-12 text-center font-32">Projects</header>
-                <section class="flex flex-row flex-wrap mg-y4">
-                    <section class="pct:w-60 pad-y4 pad-x8">
-                        <header class="font-32 pad-y2">iTheirs</header>
-                        <div class="font-24 font-light">
+                <section class="d-none flex flex-row flex-wrap-reverse mg-y4">
+                    <section class="pct:w-100 lg:pct:w-60 pad-y4 pad-x4 lg:pad-x8">
+                        <header class="font-24 lg:font-32 pad-y2">iTheirs</header>
+                        <div class="font-18 lg:font-24 lg:font-light">
                             A Platform that brings you closer to the Brands you use, love to use and <span class="underline decoration-wavy decoration-green">almost</span> cannot do without.
 
                             <div class="font-18 font-regular font-italic color-gray pad-x2 pad-y3">
@@ -239,137 +270,464 @@
                             <a href="https://www.itheirs.com" class="d-block font-18 font-normal font-italic h-8 lh-8 pad-2 underline decoration-black decoration-solid color-black">iTheirs.com</a>
                         </div>
                     </section>
-                    <section class="pct:w-25 h-540 shadow radius">
+                    <section class="pct:w-100 lg:pct:w-25 h-540 shadow radius">
                         <img src="" alt="Screenshots of iTheirs here.">
                         <section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>
                     </section>
                 </section>
 
-                <section class="flex flex-row flex-wrap mg-y4">
-                    <section class="pct:w-60 pad-y4 pad-x8">
-                        <header class="font-32 pad-y2">Summary</header>
-                        <div class="font-24 font-light">
-                            Summary is a Service that aims to provide <span class="underline decoration-wavy decoration-green">summary</span> of articles, long texts and content from URLs to name a few.
+                <section class="flex flex-row flex-wrap-reverse justify-center lg:justify-start mg-y8 lg:mg-y12 shadow2 lg:shadow-unset radius">
+                    <section class="pct:w-96 lg:pct:w-52 pad-y4 pad-x4 lg:pad-x8 text-center lg:text-left">
+                        <header class="font-24 lg:font-32 font-regular pad-y2">
+                            Summary
+                            <a href="https://www.createsummary.com" target="_blank" class="d-block h-4 lh-4 font-13 font-medium color-black">www.createsummary.com</a>
+                        </header>
+                        <div class="font-20 lg:font-24 font-light pad-y2">
+                            Summary is a Service that provides <span class="underline decoration-wavy decoration-green decoration-2">summary</span> of articles, large texts, URL contents, news and text files.
 
-                            <div class="font-16 font-regular pad-x2 pad-y2">
-                                <div class="font-bold font-16 h-8 lh-8">Features:</div>
-                                <div class="pad-y1">
-                                    <span class="color-black">URL:</span> Get summary of URL links
+                            <div class="font-15 lg:font-16 font-regular pad-x2 pad-y2">
+                                <!--<div class="font-semibold font-14 h-8 lh-8">Features:</div>-->
+                                <div class="flex flex-row justify-evenly lg:justify-start pad-t2 pad-b4">
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 lg:mg-r2">URL</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 lg:mg-r2">Text</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 lg:mg-r2">Search</span>
                                 </div>
-                                <div class="pad-y1">
-                                    <span class="color-black">Text:</span> Get Summary of large body of text
-                                </div>
-                                <div class="pad-y1">
-                                    <span class="color-black">Search:</span> Provide multiple summarized search results based on your input
+                                <div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32 color-black"></span> Summarize contents of URL links
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32 color-black"></span> Summary of large body of text
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32 color-black"></span> Provide multiple summarized search
+                                        results based on your input
+                                    </div>
                                 </div>
                             </div>
-                            <a href="https://www.summarycreate.netlify.app" class="d-block font-16 font-regular h-8 lh-8 pad-x2 underline decoration-black decoration-solid color-black">Try Summary</a>
+                            <!--<a href="https://www.createsummary.com"
+                               class="d-block font-16 font-regular h-8 lh-8 pad-x2 underline decoration-black decoration-solid color-black">Try Summary</a>-->
                         </div>
                     </section>
-                    <section class="pct:w-25 h-540 shadow radius">
-                        <img src="images/deployed_summary_1.png" alt="Screenshots of Summary here." class="pct:h-100">
+                    <section class="lg:d-none flex flex-row flex-nowrap pct:w-100 h-320 mg-x-auto overflow-x-auto pad-y2 snap-x-mandatory">
+                        <img src="images/deployed_summary_1.png" alt="Screenshots of Summary here." class="pct:h-100 mg-x2 shadow radius snap-center">
+                        <img src="images/deployed_summary_2.png" alt="Screenshots of Summary here." class="pct:h-100 mg-x2 shadow radius snap-center">
+                        <img src="images/deployed_summary_3.png" alt="Screenshots of Summary here." class="pct:h-100 mg-x2 shadow radius snap-center">
+                        <!--<section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>-->
+                    </section>
+                    <section class="lg:flex lg:flex-column lg:flex-nowrap lg:justify-start lg:pct:w-48 h-0 lg:h-600 mg-x-auto snap-y-mandatory overflow-y-auto">
+                        <img src="images/deployed_summary_desktop_1.png" alt="Screenshots of Summary here." class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                        <img src="images/deployed_summary_desktop_2.png" alt="Screenshots of Summary here." class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                        <img src="images/deployed_summary_desktop_3.png" alt="Screenshots of Summary here." class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
                         <!--<section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>-->
                     </section>
                 </section>
 
-                <section class="flex flex-row flex-wrap mg-y4">
-                    <section class="pct:w-60 pad-y4 pad-x8">
-                        <header class="relative font-32 pad-y2">Eye CSS</header>
-                        <div class="font-24 font-light">
+                <section class="flex flex-row flex-wrap-reverse justify-center lg:justify-start align-items-center mg-y8 lg:mg-y12 shadow2 lg:shadow-unset radius">
+                    <section class="pct:w-96 lg:pct:w-52 pad-y4 pad-x4 lg:pad-x8 text-center lg:text-left">
+                        <header class="relative font-24 lg:font-32 pad-y2">
+                            Eye CSS <img src="images/eye_css_icon.png" alt="EYE CSS logo"
+                                 class="d-inline-block v-align-bottom square-5 radius object-cover">
+                            <a href="https://pypi.org/project/eye-css/" class="d-block h-4 lh-4 font-13 font-medium color-black">https://pypi.org/project/eye-css/</a>
+                            <a href="https://github.com/BMayowa/EYE_CSS/" class="d-block h-4 lh-4 font-13 font-medium color-black">https://github.com/BMayowa/EYE_CSS</a>
+                        </header>
+                        <div class="font-20 lg:font-24 font-light pad-y2">
                             A Dynamic CSS Library, written in Python for styling web, desktop, mobile apps.
+                            <!--**Used to design this page.-->
 
-                            <div class="font-18 font-regular pad-x2 pad-y3">
-                                <div class="pad-y1">
-                                    <span class="font-20 font-italic">Easy to use</span>
+                            <div class="font-15 lg:font-18 font-regular pad-x2 pad-y3">
+                                <!--<div class="font-semibold font-14 h-8 lh-8">Features:</div>-->
+                                <div class="flex flex-row justify-evenly lg:justify-start flex-wrap pad-t2 pad-b4">
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">Dynamic</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">Fast</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">Familiar</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">Configurable</span>
                                 </div>
-                                <div class="pad-y1">
-                                    <span class="font-20 font-italic">Small in Size</span>
-                                </div>
-                                <div class="pad-y1">
-                                    <span class="font-20 font-italic">Fast</span>
-                                </div>
-                                <div class="pad-y1">
-                                    <span class="font-20 font-italic">Familiar - <span class="font-18">Similar to tailwind CSS</span> but with richer features</span>
-                                </div>
-                                <div class="pad-y1">
-                                    <span class="font-20 font-italic">Fully Dynamic</span>
+                                <div class="">
+                                    <!--<div class="pad-y1">
+                                        <span class="">Easy to use</span>
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="">Small in Size</span>
+                                    </div>-->
+                                    <!--<div class="pad-y1">
+                                        <span class="">Fast</span>
+                                    </div>-->
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32"></span>Similar to tailwind CSS but more dynamic
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32"></span>Every CSS property can be dynamically defined
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32"></span>Configurable using a .yml file. <span class="d-block lh-100 font-13 font-italic color-676767">Makes it usable docker-containers</span>
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32"></span>Available on Python Package Index - PyPI
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32"></span>Can be pip-installed. <span class="d-block lh-100 font-13 font-italic color-676767">pip install eye_css</span>
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="fa fa-arrow-right font-8 w-4 lg:w-32"></span>Can style any website. <span class="lh-100 font-14 color-676767">(e.g., this current website)</span></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="pct:w-25 h-480 shadow radius">
-                        <img src="" alt="Screenshots of iTheirs here.">
-                        <section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>
+                    <section class="lg:d-none flex flex-row flex-nowrap pct:w-100 h-320 mg-x-auto overflow-x-auto pad-y2 snap-x-mandatory">
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_github.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_pypi_1.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_pypi_2.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_pypi_3.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <!--<section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>-->
+                    </section>
+                    <section class="lg:flex lg:flex-column lg:flex-nowrap lg:justify-start lg:pct:w-48 h-0 lg:h-720 mg-x-auto lg:pad-y2 snap-y-mandatory overflow-y-auto">
+                        <div class="pct:h-100 mg-x2 shadow radius snap-center">
+                            <img src="images/eye_css_github_desktop.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <div class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                            <img src="images/eye_css_pypi_desktop_1.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <div class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                            <img src="images/eye_css_pypi_desktop_2.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <div class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                            <img src="images/eye_css_pypi_desktop_3.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <!--<section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>-->
                     </section>
                 </section>
 
-                <section class="flex flex-row flex-wrap mg-y4">
-                    <section class="pct:w-60 pad-y4 pad-x8">
-                        <header class="relative font-32 pad-y2">Nine <span class="relative d-inline-block valign-top w-24 h-18 font-bold gradient:to_right-green_33pct-white_33pct-white_67pct-green_67pct"></span></header>
-                        <div class="font-24 font-light">
+                <section class="flex flex-row flex-wrap-reverse justify-center lg:justify-start mg-y8 lg:mg-y12 shadow2 lg:shadow-unset radius">
+                    <section class="pct:w-96 lg:pct:w-52 pad-y4 pad-x4 lg:pad-x8 text-center lg:text-left">
+                        <header class="relative font-24 lg:font-32 pad-y2">
+                            Nine <span class="relative d-inline-block valign-top w-24 h-18 font-bold gradient:to_right-green_33pct-white_33pct-white_67pct-green_67pct"></span>
+                            <a href="https://nine.netlify.app/" class="d-block h-4 lh-4 font-13 font-medium color-black">https://nine.netlify.app</a>
+                        </header>
+                        <div class="font-20 lg:font-24 font-light">
                             The one-stop platform to browse, search, know and download the latest apps in Nigeria
                             developed by Nigerians.
 
-                            <div class="font-18 font-regular font-italic pad-x2 pad-y3">
-                                <div class="pad-y1">
-                                    <span class="font-20">AppStore apps</span>
+                            <div class="font-15 lg:font-18 font-regular pad-x2 pad-y3">
+                                <div class="flex flex-row justify-evenly lg:justify-start flex-wrap pad-t2 pad-b4">
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">AppStore Apps</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">PlayStore Apps</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">GalaxyStore Apps</span>
+                                    <span class="h-6 lh-6 bg-lightgray radius-round pad-x3 mg-y1 lg:mg-r2">Third-party Stores</span>
                                 </div>
-                                <div class="pad-y1">
-                                    <span class="font-20">PlayStore apps</span>
-                                </div>
-                                <div class="pad-y1">
-                                    <span class="font-20">GalaxyStore apps</span>
-                                </div>
-                                <div class="pad-y1">
-                                    <span class="font-20">Third-party apps <span class="font-italic">(optional)</span></span>
+                                <div class="d-none">
+                                    <div class="pad-y1">
+                                        <span class="font-20">AppStore apps</span>
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="font-20">PlayStore apps</span>
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="font-20">GalaxyStore apps</span>
+                                    </div>
+                                    <div class="pad-y1">
+                                        <span class="font-20">
+                                            Third-party apps <span class="font-italic">(optional)</span></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="pct:w-25 h-480 shadow radius">
-                        <img src="" alt="Screenshots of iTheirs here.">
-                        <section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>
+                    <section class="lg:d-none flex flex-row flex-nowrap pct:w-100 h-320 mg-x-auto overflow-x-auto pad-y2 snap-x-mandatory">
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_icon.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_pypi_1.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <div class="pct:h-100 mg-x2">
+                            <img src="images/eye_css_pypi_2.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="w-inherit pct:h-100 shadow radius snap-center object-cover">
+                        </div>
+                        <!--<section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>-->
+                    </section>
+                    <section class="lg:flex lg:flex-column lg:flex-nowrap lg:justify-start lg:pct:w-48 h-0 lg:h-600 mg-x-auto lg:pad-y2 snap-y-mandatory overflow-y-auto">
+                        <div class="pct:h-100 mg-x2 shadow radius snap-center">
+                            <img src="images/eye_css_icon.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <div class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                            <img src="images/eye_css_pypi_1.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <div class="pct:h-100 mg-x2 mg-y2 shadow radius snap-center">
+                            <img src="images/eye_css_pypi_2.png" alt="Screenshots of EYE CSS on pypi here."
+                                 class="pct:w-100 pct:h-100 object-cover radius-inherit">
+                        </div>
+                        <!--<section class="relative">iTheirs help you share your sincere thoughts on what you like or do not like about constant happenings of Brands.</section>-->
                     </section>
                 </section>
 
-                <section class="w2-12 h-8 lh-8 mg-x8 mg-y12 radius-round bg-black color-white text-center font-bold hover:scale-1.1 transition:transform_.4s_ease cursor-pointer">More Projects <span class="fa fa-arrow-right"></span></section>
+                <section class="w2-12 h-8 lh-8 mg-x-auto lg:mg-x8 mg-t8 lg:mg-t12 radius-round bg-black color-white text-center font-bold hover:scale-1.1 transition:transform_.4s_ease cursor-pointer">More Projects <span class="fa fa-arrow-right"></span></section>
             </article>
 
-            <article class="relative d-block vw:w-100 vh:h-100">
-                <header class="h3-12 lh3-12 text-center font-24">Education</header>
-                <section class="text-center">
-                    FEDERAL UNIVERSITY OF TECHNOLOGY, AKURE.
-                    I am a Proud Futarian.
+            <article class="relative d-block vw:w-100 bg-whitesmoke">
+                <header class="h2-12 lh2-12 text-center font-24">Education</header>
+                <section class="text-center font-bold pct:w-96 lg:w-800 mg-x-auto shadow pad-y8 pad-x4 outline-lightgray outline-medium outline-dashed neg:outline-offset-14 bg-white" style="font-family: 'Cormorant Upright'">
+                    <div>
+                        <img src="images/futalogo.png" alt="" class="square-8 lg:square-10 lh-8 lg:lh-10 text-center bg-white">
+                        <div class="font-17 lg:font-18 font-regular pad-y4 uppercase" style="font-family: 'Ramaraja'">
+                            Federal University of Technology, Akure.</div>
+                    </div>
+                    <div class="font-40 lh-100 pad-t8 font-semibold" style="font-family:'Ramaraja'">Bachelor of Technology (B.Tech)</div>
+                    <div class="font-28 font-bold" style="font-family: inherit">in Computer Science</div>
+                    <div class="font-32 pad-t8 underline underline-offset-12 decoration-dotted decoration-3 decoration-lightgray font-italic color-676767" style="font-family: 'Cormorant Upright'">Mayowa Obisesan</div>
+                    <div class="font-24 pad-t8 pad-b4" style="font-family: inherit">
+                        Second Class Honors
+                        <div class="font-28 font-regular" style="font-family: 'Ramaraja'">(Upper Division)</div>
+                    </div>
                 </section>
+                <div class="d-block color-lightgray text-center h-8 lh-8">Proudly Futarian.</div>
             </article>
 
-            <article class="relative d-block vw:w-100 vh:h-100">
+            <article class="relative d-block d-none vw:w-100 vh:h-100">
                 <header class="h3-12 lh3-12 text-center font-24">Experience</header>
                 <section class=""></section>
             </article>
 
             <article class="relative d-block vw:w-100">
-                <header class="h3-12 lh3-12 text-center font-24">Industry Skills</header>
-                <section class="flex flex-row flex-wrap justify-around">
-                    <section class="pct:max-w-30">
-                        <header class="font-28">Programming Skill</header>
-                        <div>(in decreasing order of competence and usability)</div>
+                <header class="h2-12 lh2-12 text-center font-24">Industry Skills</header>
+                <section class="flex flex-column lg:flex-row flex-wrap justify-around">
+                    <section class="pct:w-88 lg:pct:max-w-30 mg-x-auto lg:mg-x-unset mg-b12">
+                        <header class="font-21 lg:font-28 text-center">Programming Skills</header>
+                        <section class="">
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">Python</header>
+                                <div class="color-474747 pad-y2">
+                                    <div class="flex flex-row pad-b1">
+                                        <div class="pct:w-30 flex-grow">
+                                            <span class="fa fa-circle font-4 square-2 text-center"></span>Django (+ Django Rest Framework + Django Ninja)
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row pad-b1">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Fast API</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Flask</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Celery</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Channels</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>NLTK</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>OpenCV</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>PyQt6</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>BeautifulSoup</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow">Experience: 6 years</span>
+                                    <span class="flex-basis flex-grow">Competency Level: 98%</span>
+                                </div>
+                            </div>
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">JavaScript</header>
+                                <div class="color-676767 pad-y2">
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow">
+                                            <span class="fa fa-circle font-4 square-2 text-center"></span>Vanilla JS
+                                        </div>
+                                        <div class="pct:w-30 flex-grow">
+                                            <span class="fa fa-circle font-4 square-2 text-center"></span>jQuery
+                                        </div>
+                                        <div class="pct:w-30 flex-grow">
+                                            <span class="fa fa-circle font-4 square-2 text-center"></span>Ajax
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Vue JS</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>React JS</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Svelte JS</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Node JS</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow">Experience: 6 years</span>
+                                    <span class="flex-basis flex-grow">Competency Level: 90%</span>
+                                </div>
+                            </div>
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">HTML + CSS</header>
+                                <div class="color-676767 pad-y2">
+                                    <span class="fa fa-circle font-4 square-2"></span>HTML 4, HTML 4.1, HTML 5
+                                    <br><span class="fa fa-circle font-4 square-2"></span>CSS 2, CSS 3 (and ready for CSS 4 😉).
+                                    <br><span class="fa fa-circle font-4 square-2"></span>Legacy and Modern CSS Styles
+                                    <!--<br><span class="fa fa-circle font-4 square-2"></span>legacy CSS styles for older browsers compatibility. inline-block, floats, etc.
+                                    <br><span class="fa fa-circle font-4 square-2"></span>Modern CSS styles. e.g., flex, filters, etc.-->
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow">Experience: 7 years</span>
+                                    <span class="flex-basis flex-grow">Competency Level: 100%</span>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="pct:w-88 lg:pct:max-w-30 mg-x-auto lg:mg-x-unset mg-b12">
+                        <header class="font-21 lg:font-28 text-center">Technical Skills</header>
+                        <section class="">
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">Databases</header>
+                                <div class="color-474747 pad-y2">
+                                    <div class="flex flex-row pad-b1">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>PostgreSQL</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>MySQL</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>SQLite</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>MongoDB</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>CouchDB</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow">Experience: 5-6 years</span>
+                                    <span class="flex-basis flex-grow">Competency Level: 90%</span>
+                                </div>
+                            </div>
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">Tools</header>
+                                <div class="color-474747 pad-y2">
+                                    <div class="flex flex-row pad-b1">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Git</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Docker</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Redis</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Github</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>BitBucket</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Jira</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow"></span>
+                                    <span class="flex-basis flex-grow">Competency Level: 90%</span>
+                                </div>
+                            </div>
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">Cloud</header>
+                                <div class="color-474747 pad-y2">
+                                    <div class="flex flex-row pad-b1">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>AWS - Amazon Web Services</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>DigitalOcean</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Netlify</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow"></span>
+                                    <span class="flex-basis flex-grow">Competency Level: 85%</span>
+                                </div>
+                            </div>
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">Operating Systems</header>
+                                <div class="color-676767 pad-y2">
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow">
+                                            <span class="fa fa-circle font-4 square-2 text-center"></span>Windows OS  ( + Powershell)
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Linux (Ubuntu, Fedora, Kali)</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Mac OS</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow"></span>
+                                    <span class="flex-basis flex-grow">Competency Level: 95%</span>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="pct:w-88 lg:pct:max-w-30 mg-x-auto lg:mg-x-unset mg-b12">
+                        <header class="font-21 lg:font-28 text-center">UI/UX Skills</header>
+                        <section class="">
+                            <div class="pct:w-100 shadow radius pad-4 mg-t4">
+                                <header class="font-18 font-bold">UI/UX Tools</header>
+                                <div class="color-474747 pad-y2">
+                                    <div class="flex flex-row pad-b1">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Figma</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>Photoshop</div>
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>InkScape</div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div class="pct:w-30 flex-grow"><span class="fa fa-circle font-4 square-2 text-center"></span>SparkPost</div>
+                                    </div>
+                                </div>
+                                <div class="sep-solid sep-1 sep-EEE mg-t2"></div>
+
+                                <div class="flex flex-row justify-start pad-t4 font-semibold">
+                                    <span class="flex-basis flex-grow"></span>
+                                    <span class="flex-basis flex-grow">Competency Level: 80%</span>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="d-none pct:w-96 lg:pct:max-w-30 mg-x-auto lg:mg-unset">
+                        <header class="font-28 text-center">Programming Skill</header>
+                        <div class="text-center">(in decreasing order of competence and usability)</div>
                         <div class="mg-y4">
-                            <span class="font-18">▪️ Python</span>
-                            <span class=""></span>
-                            <div>Web Frameworks: <b>Django, FastAPI, Flask, Django Rest Framework</b></div>
-                            <div>Web Integrations: <b>Celery, RabbitMQ, Redis, Channels</b></div>
-                            <div>Other Frameworks/Libraries: <b>NLTK (Natural Language ToolKit), pyttsx3, PyQt6</b></div>
+                            <span class="font-18 h-6 lh-6">▪️ Python</span>
+                            <section class="pad-x4 lh-4">
+                                <div class="font-13 list-square">Experience: 6 years</div>
+                                <div class="font-13">Competency Level: 98%</div>
+                                <div class="">Frameworks
+                                    <ul class="list-circle mg-0">
+                                        <li class="">Django, FastAPI, Flask, Django Rest Framework,
+                                            Django Ninja
+                                        </li>
+                                        <li class="">Celery, RabbitMQ, Redis, Channels</li>
+                                        <li class="">NLTK (Natural Language ToolKit), pyttsx3,
+                                            PyQt6, OpenCV
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
                         <div class="mg-y4">
                             <span class="font-18">▪️ CSS</span>
                             <span class=""></span>
                             <div>Competent in both CSS 2, CSS 3 (and ready for CSS 4)</div>
+                            <div>Skill Level: 100%</div>
                         </div>
                         <div class="mg-y4">
                             <span class="font-18">▪️ JavaScript</span>
                             <span class=""></span>
-                            <div>Frameworks: Vanilla, React, Angular, (And a Pinch of Node.js)</div>
+                            <div>Frameworks: Vanilla JS, VueJS, React and Node.js</div>
+                            <div>Skill Level: 90%</div>
                         </div>
                         <div class="mg-y4">
                             <span class="font-18">▪️ Java</span>
@@ -393,7 +751,7 @@
                             </div>
                         </section>
                     </section>
-                    <section class="pct:max-w-30">
+                    <section class="d-none pct:w-96 lg:pct:max-w-30">
                         <header class="font-28">Design Skill</header>
                         <div>(in decreasing order of competence and usability)</div>
                         <div class="mg-y4">
@@ -415,7 +773,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="pct:max-w-30">
+                    <section class="d-none pct:w-96 lg:pct:max-w-30">
                         <header class="font-28">People Skill</header>
                         <div>I refer to the below skills as people skills because it involves people</div>
                         <div class="mg-y4">
@@ -441,13 +799,39 @@
         <section class="content-descriptions"></section>
     </section>
 
-    <section class="footer flex flex-column justify-start text-center bg-lighter pad-y4">
-        <div class="font-18 h-12 lh-12">Page made with ❤️</div>
-        <div class="font-16 h-4 lh-4">Design by Mayowa Obisesan</div>
-        <div class="font-16 h-4 lh-4">Styled using <a href="https://www.github.com/BMayowa/EYE_CSS">Eye.css</a></div>
-        <div class="font-16 h-4 lh-4">Hosted by <a href="https://www.github.com/">Github</a></div>
+    <section class="footer flex flex-column justify-start text-center bg-lighter bg-floralwhite pad-t8">
+        <div class="font-48">👏🏼</div>
+        <div class="font-15 pad-t2">You've reached the end of my page</div>
+        <div class="font-21 pad-y12 d-none">
+            What should I improve?
+            <div class="">
+                <textarea name="" id="" class="pct:w-80 lg:w-600 h-128 border-0 outline-none bg-gold radius pad-4 font-16"></textarea>
+            </div>
+        </div>
+        <!--<div class="font-18 h-12 lh-12">Page made with ❤️</div>
+        <div class="d-none flex flex-column lg:flex-row justify-around">
+            <div class="font-16 h-6 lh-6">Styled using <a href="https://www.github.com/BMayowa/EYE_CSS">Eye.css</a></div>
+            <div class="font-16 h-6 lh-6">Design by Mayowa Obisesan</div>
+            <div class="font-16 h-6 lh-6">Hosted by <a href="https://www.github.com/">Github</a></div>
+        </div>-->
+        <div class="sep-solid sep-1 sep-EEE mg-t10 mg-b4 pct:w-80 lg:pct:w-32 mg-x-auto radius-circle"></div>
 
-        <div class="font-16 font-medium mg-t4">&copy; 2022</div>
+        <div class="pad-t6 pct:w-80 lg:w-400 mg-x-auto flex flex-row justify-around">
+            <a href="tel:+2348087989548" target="_blank" class=""><img src="images/socials/smartphone.png" alt="" class=""></a>
+            <a href="mailto:mayowaobi74@gmail.com" target="_blank" class=""><img src="images/socials/gmail.png" alt="" class=""></a>
+            <a href="mailto:mayowaobi74@outlook.com" target="_blank" class=""><img src="images/socials/outlook-2.png" alt="" class=""></a>
+            <a href="https://github.com/BMayowa" target="_blank" class=""><img src="images/socials/github.png" alt="" class=""></a>
+            <a href="https://linkedin.com/in/mayowa-obisesan" target="_blank" class=""><img src="images/socials/linkedin.png" alt="" class=""></a>
+            <a href="https://twitter.com/blessed_mayowa" target="_blank" class=""><img src="images/socials/twitter-1.png" alt="" class=""></a>
+        </div>
+        <div class="font-14 font-medium mg-y4">&copy; 2023 Mayowa Obisesan</div>
+
+        <div class="flex flex-column lg:flex-row lg:justify-center bg-white pad-y5 mg-t4 shadow:-8px-0px-16px-0px-DEDEDE">
+            <div class="font-semibold order-1 lg:order-2 mg-y2 lg:mg-y-unset lg:pad-x4 lg:border-x-1 lg:border-y-0 lg:border-black lg:border-solid">Design by Mayowa Obisesan</div>
+            <div class="order-2 lg:order-1 mg-y2 lg:mg-y-unset lg:pad-x4">Styled with <a href="https://www.github.com/BMayowa/EYE_CSS" class="color-black">Eye CSS</a></div>
+            <div class="order-3 mg-y2 lg:mg-y-unset lg:pad-x4">Hosting by  <a href="https://www.github.com/" class="color-black">Github</a></div>
+        </div>
+        <!--<div class="font-18 h-12 lh-12">Page made with ❤️</div>-->
     </section>
 </section>
 
